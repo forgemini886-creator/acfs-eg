@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وحدة دراسات شرق أفريقيا | ACFS</title>
+    
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- المكتبات -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['IBM Plex Sans Arabic', 'sans-serif'] },
+                    colors: {
+                        'brand-dark': '#0f172a',
+                        'east-blue': '#0057B7', // أزرق مميز لشرق أفريقيا
+                        'east-green': '#009739',
+                        'brand-gold': '#d97706',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #f8fafc; color: #1e293b; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="bg-brand-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition" title="العودة للرئيسية">
+                        <i data-lucide="arrow-right" class="text-white w-5 h-5"></i>
+                    </a>
+                    <div class="flex flex-col">
+                        <h1 class="font-bold text-base md:text-lg tracking-wide leading-tight">
+                            المركز الأفريقي للدراسات المستقبلية
+                        </h1>
+                        <span class="text-[10px] text-east-blue font-bold tracking-widest uppercase">
+                            East Africa Research Unit
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 py-16 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-full h-1 bg-gradient-to-r from-east-blue via-brand-gold to-east-green"></div>
+        
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-east-blue text-xs font-bold rounded-full mb-6 border border-blue-200">
+                <span class="w-2 h-2 rounded-full bg-east-blue animate-pulse"></span>
+                وحدة إقليمية متخصصة
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                وحدة دراسات شرق أفريقيا
+            </h1>
+            <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                رصد وتحليل الديناميات الجيوسياسية في القرن الأفريقي، منطقة البحيرات العظمى، ومجموعة شرق أفريقيا. نركز على قضايا أمن البحر الأحمر، التكامل الاقتصادي، والصراعات الحدودية.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content (الأبحاث) -->
+    <main class="max-w-7xl mx-auto px-4 py-12 flex-grow">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- 1. دراسة القرن الأفريقي وباب المندب -->
+            <a href="horn_of_africa.html" class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="h-48 bg-slate-800 relative p-6 flex flex-col justify-end overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-800 via-blue-900 to-black opacity-90"></div>
+                    <span class="relative z-10 bg-white/20 backdrop-blur text-white text-[10px] font-bold px-2 py-1 rounded w-fit mb-2">تقدير موقف</span>
+                    <h3 class="relative z-10 text-white font-bold text-lg leading-snug group-hover:text-yellow-400 transition-colors">
+                        أزمة القرن الأفريقي: إعادة تشكيل الجغرافيا السياسية لباب المندب
+                    </h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-600 text-sm line-clamp-3 mb-4 leading-relaxed">
+                        تحليل للصدع الخليجي في اليمن، التحالف الإسرائيلي مع أرض الصومال، وعودة الاستراتيجية المصرية للمواجهة.
+                    </p>
+                    <div class="flex items-center text-brand-gold text-sm font-bold gap-2">
+                        اقرأ الدراسة <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 2. دراسة إريتريا (القات وبناء الدولة) -->
+            <a href="eritrea.html" class="group bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div class="h-48 bg-slate-800 relative p-6 flex flex-col justify-end overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-600 via-red-600 to-blue-600 opacity-90"></div>
+                    <span class="relative z-10 bg-white/20 backdrop-blur text-white text-[10px] font-bold px-2 py-1 rounded w-fit mb-2">أنثروبولوجيا سياسية</span>
+                    <h3 class="relative z-10 text-white font-bold text-lg leading-snug group-hover:text-yellow-400 transition-colors">
+                        سياسة حظر "القات" في إريتريا: هندسة الهوية الوطنية
+                    </h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-slate-600 text-sm line-clamp-3 mb-4 leading-relaxed">
+                        قراءة في الأبعاد السياسية والرمزية لقرار منع القات، وعلاقته بمشروع "الاعتماد على الذات" وصياغة المواطن الجديد.
+                    </p>
+                    <div class="flex items-center text-brand-gold text-sm font-bold gap-2">
+                        اقرأ الدراسة <i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 3. كارت قادم (السودان مثلاً) -->
+            <div class="group bg-gray-50 rounded-2xl border border-gray-200 overflow-hidden opacity-75">
+                <div class="h-48 bg-slate-200 relative p-6 flex flex-col justify-end items-center">
+                    <i data-lucide="clock" class="w-10 h-10 text-gray-400 mb-2"></i>
+                    <span class="text-gray-500 font-bold">قريباً</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-gray-700 mb-2">السودان: مآلات الحرب</h3>
+                    <p class="text-gray-500 text-sm">جاري العمل على إعداد تقدير موقف حول الوضع في السودان...</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer الموحد -->
+    <footer class="bg-brand-dark text-slate-400 py-10 text-center text-xs mt-auto border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 space-y-4">
+            <div>
+                <p class="font-bold text-white text-lg mb-1">المركز الأفريقي للدراسات المستقبلية</p>
+                <p class="text-gray-500 font-medium tracking-wide">African Center for Future Studies (ACFS)</p>
+            </div>
+            
+            <div class="w-16 h-1 bg-brand-gold mx-auto rounded-full opacity-50"></div>
+            
+            <div>
+                <p class="text-slate-300 font-bold text-sm">مدير المركز: حسن صابر الفلت</p>
+            </div>
+            
+            <p class="pt-6 opacity-40">© 2025 جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
